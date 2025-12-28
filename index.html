@@ -1558,6 +1558,21 @@
         font-size: 18px;
       }
     }
+
+
+    /* টিউশন কেয়ার প্ল্যান buttton animation*/
+    /* বাটনটি হালকা বড়-ছোট হওয়ার অ্যানিমেশন */
+    @keyframes softPulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .btn-plan-animated {
+      animation: softPulse 2s infinite ease-in-out;
+      background: #7c3aed !important; /* প্রফেশনাল বেগুনী রঙ */
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+    }
   </style>
   <script type="application/ld+json">
     {
@@ -1650,8 +1665,8 @@
             <i class="fa-brands fa-whatsapp"></i> WhatsApp করুন
           </a>
           
-          <a href="#quiz-section" class="btn btn-quiz">
-            <i class="fa-solid fa-clipboard-question"></i> সন্তানের গণিত দক্ষতা যাচাই করুন
+          <a href="#care-plans" class="btn btn-quiz btn-plan-animated">
+              <i class="fa-solid fa-list-check"></i> টিউশন কেয়ার প্ল্যান
           </a>
         </div>
       </div>
@@ -3256,16 +3271,18 @@
         </div>
       </div>
     </div>
-      -->
+      
     
     <a href="#care-plans" class="floating-plan-btn">
       <i class="fa-solid fa-list-check"></i> হোম টিউশন কেয়ার প্ল্যান দেখুন
     </a>
+    -->
     <button onclick="topFunction()" id="myBtn" title="উপরে যান">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 </body>
 </html>
+
 
 
 
